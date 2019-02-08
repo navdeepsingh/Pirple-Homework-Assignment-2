@@ -18,26 +18,25 @@ NODE_ENV=production node index.js // It will run server on production port
 ## Directions
 1. Create New User Request {POST}
 * **Required fields**: name, email, password, address, tosAgreement
-* Additional requests: {GET, UPDATE, DELETE}
+* **Additional requests**: {GET, UPDATE, DELETE}
 ```bash
 http://locahost:3000/user
 ```
 
 2. Create Login Request {POST} (Token will be created)
-* **Required fields**: email, password*
+* **Required fields**: email, password
 ```bash
 http://localhost:3000/login
 ```
 
 3. Create Logout Request {DELETE}
-* **Required fields**: id*
+* **Required fields**: id
 ```bash
 http://localhost:3000/logout?id=tokenid
 ```
 4. Menu Request {GET}
 * **Required fields**: email
 * **Header fields**: token
-<i>Required fields: id</i>
 ```bash
 http://localhost:3000/menu?email=navdeep.er@gmail.com
 ```
@@ -55,7 +54,7 @@ http://localhost:3000/cart
 ```
 7. Order Request
 * **Required fields**: cartId 
-* **Header fields**: token *
+* **Header fields**: token
 ```bash
 http://localhost:3000/order
 ```
